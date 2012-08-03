@@ -1,5 +1,4 @@
-#ifndef stdafx_h__
-#define stdafx_h__
+#pragma once
 
 // windows
 #define WIN32_LEAN_AND_MEAN
@@ -16,5 +15,3 @@
 
 #define D3D_COMPILE_STANDARD_FILE_INCLUDE ((ID3DInclude*)(UINT_PTR)1)
 
-
-#endif // stdafx_h__

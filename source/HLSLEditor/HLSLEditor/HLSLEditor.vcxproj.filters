@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Dateien">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Dateien">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien\Debug">
+      <UniqueIdentifier>{e02b4a05-2b66-4222-b034-5a35ac78a7b2}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien\Release">
+      <UniqueIdentifier>{bce9642c-3bcd-4cc9-9f26-078ff13c75f8}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="source\custom widgets">
+      <UniqueIdentifier>{fa446eb9-9914-4078-a14c-557c62107cb2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_hlsleditor.cpp">
+      <Filter>Generierte Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="HLSLEditor.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HLSLEditor.cpp">
+      <Filter>Generierte Dateien\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HLSLEditor.cpp">
+      <Filter>Generierte Dateien\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SyntaxHighlighter.cpp">
+      <Filter>Generierte Dateien\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SyntaxHighlighter.cpp">
+      <Filter>Generierte Dateien\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SyntaxHighlighter.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="HLSLDocument.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="HLSLProject.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="HLSLCompiler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeEditor.cpp">
+      <Filter>source\custom widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="LineNumberArea.cpp">
+      <Filter>source\custom widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CodeEditor.cpp">
+      <Filter>Generierte Dateien\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CodeEditor.cpp">
+      <Filter>Generierte Dateien\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="IncludeHandler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_hlsleditor.h">
+      <Filter>Generierte Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSLProject.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSLDocument.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSLCompiler.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="IncludeHandler.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlsleditor.ui">
+      <Filter>Form Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlsleditor.qrc">
+      <Filter>Resource Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HLSLEditor.h">
+      <Filter>source</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SyntaxHighlighter.h">
+      <Filter>source</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CodeEditor.h">
+      <Filter>source\custom widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LineNumberArea.h">
+      <Filter>source\custom widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HLSLEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\bin\HLSLEditor\config.xml" />
+  </ItemGroup>
+</Project>

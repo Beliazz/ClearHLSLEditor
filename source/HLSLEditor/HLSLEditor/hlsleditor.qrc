@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>cc_mono_icon_set_png/white/48x48/doc_new.png</file>
+    <file>cc_mono_icon_set_png/white/48x48/download.png</file>
+    <file>cc_mono_icon_set_png/white/48x48/redo.png</file>
+    <file>cc_mono_icon_set_png/white/48x48/undo.png</file>
+    <file>cc_mono_icon_set_png/blacks/48x48/save.png</file>
+    <file>cc_mono_icon_set_png/blacks/48x48/doc_new.png</file>
+    <file>cc_mono_icon_set_png/blacks/48x48/download.png</file>
+    <file>cc_mono_icon_set_png/blacks/48x48/redo.png</file>
+    <file>cc_mono_icon_set_png/blacks/48x48/undo.png</file>
+  </qresource>
+</RCC>

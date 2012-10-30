@@ -33,10 +33,10 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(BLOCO_HOME)\trunk\bin\$(ProjectName)$(ConfigurationName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(HLSLEDITOR_HOME)\bin\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(ConfigurationName)</OutDir>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Samples\C++\Effects11\inc;$(DXSDK_DIR)Include;$(BLOCO_HOME)\trunk\source\ClearGraphicsLibrary\ClearGraphicsLibrary;$(IncludePath)</IncludePath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Samples\C++\Effects11\debug;$(DXSDK_DIR)Lib\x86;$(BLOCO_HOME)\trunk\bin\ClearGraphicsLibrary\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Samples\C++\Effects11\inc;$(DXSDK_DIR)Include;$(CGL_HOME)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Samples\C++\Effects11\debug;$(DXSDK_DIR)Lib\x86;$(CGL_HOME)\lib\debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -58,8 +58,17 @@
       <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtXmld4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>copy "$(BLOCO_HOME)\trunk\bin\ClearGraphicsLibrary\Debug\ClearGraphicsLibrary.dll" "$(OutDir)ClearGraphicsLibrary.dll"</Command>
+      <Command>
+      </Command>
     </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>copy "$(CGL_HOME)\bin\debug\ClearGraphicsLibrary.dll" "$(OutDir)ClearGraphicsLibrary.dll"
+copy "$(QTDIR)\bin\QtCored4.dll" "$(OutDir)QtCored4.dll"
+copy "$(QTDIR)\bin\QtGuid4.dll" "$(OutDir)QtGuid4.dll"
+copy "$(QTDIR)\bin\QtXmld4.dll" "$(OutDir)QtXmld4.dll"
+
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

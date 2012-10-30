@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'hlsleditor.ui'
 **
-** Created: Thu 19. Jul 18:50:08 2012
+** Created: Sun 5. Aug 21:05:49 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
